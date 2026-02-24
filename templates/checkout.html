@@ -1,0 +1,11 @@
+<h1>Checkout</h1>
+
+<h2>Total: ₹{{ total }}</h2>
+
+<form method="POST">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Your Name" required><br><br>
+    <textarea name="address" placeholder="Your Address" required></textarea><br><br>
+    <input type="text" name="phone" placeholder="Phone Number" required><br><br>
+    <button type="submit">Place Order</button>
+</form>
